@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<div class="navbar-container">
+    <nav class="navbar navbar-default" style="margin-bottom: 0;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Chatbot</a>
+            </div>
+            <%if (user) { %>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav navbar-nav"><a href="#">Logged in as <%= user.name %></a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            <% } %>
+        </div>
+    </nav>
+</div>
